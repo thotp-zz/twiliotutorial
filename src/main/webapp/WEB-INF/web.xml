@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<web-app version="3.0"
-         xmlns="http://java.sun.com/xml/ns/javaee"
+<web-app metadata-complete="false" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-         metadata-complete="false">
-
-         
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.thotp.twiliotutorial.servlet.HomeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StatusCallbackServlet</servlet-name>
+        <servlet-class>com.thotp.twiliotutorial.servlet.StatusCallbackServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InboundHandlerServlet</servlet-name>
+        <servlet-class>com.thotp.twiliotutorial.servlet.InboundHandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StatusCallbackServlet</servlet-name>
+        <url-pattern>/statusCallback</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InboundHandlerServlet</servlet-name>
+        <url-pattern>/inboundHandler</url-pattern>
+    </servlet-mapping>
 </web-app>
-
