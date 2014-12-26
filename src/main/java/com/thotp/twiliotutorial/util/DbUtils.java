@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 public class DbUtils {
 
-    private static final String DB_NAME = "twiliotutorial";
+    private static final String DB_NAME = "<your database name>";
     private static Connection connection = null;
 
     static {

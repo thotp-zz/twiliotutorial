@@ -13,11 +13,11 @@ import com.twilio.sdk.resource.instance.Message;
 
 public class SmsUtils {
 
-    private static final String ACCOUNT_SID = "ACd5aeb1a060512a4ea09364a0a478dfe8";
-    private static final String AUTH_TOKEN = "0b011302dec1f9382e156422c5e15f67";
-    private static final String SMS_CENTER = "+15204132927";
+    private static final String ACCOUNT_SID = "<your Account SID>";
+    private static final String AUTH_TOKEN = "<your Auth Token>";
+    private static final String SMS_CENTER = "<your Twilio Number>";
     private static final String STATUS_CALLBACK_URL =
-            "http://twiliotutorial-trphuctho.rhcloud.com/statusCallback";
+            "http://<your-application>.rhcloud.com/statusCallback";
     private static final TwilioRestClient client;
 
     static {
